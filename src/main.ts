@@ -8,4 +8,6 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
   app.component(key, component);
 }
 
-createApp(App).mount('#app');
+import router from '@/router/index';
+
+createApp(App).use(router).mount('#app');

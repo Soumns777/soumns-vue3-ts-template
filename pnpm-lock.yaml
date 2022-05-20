@@ -10,11 +10,13 @@ specifiers:
   unplugin-vue-components: ^0.19.5
   vite: ^2.9.9
   vue: ^3.2.25
+  vue-router: '4'
   vue-tsc: ^0.34.7
 
 dependencies:
   element-plus: 2.2.0_vue@3.2.34
   vue: 3.2.34
+  vue-router: 4.0.15_vue@3.2.34
 
 devDependencies:
   '@element-plus/icons-vue': 1.1.4_vue@3.2.34
@@ -193,6 +195,10 @@ packages:
     dependencies:
       '@vue/compiler-dom': 3.2.34
       '@vue/shared': 3.2.34
+
+  /@vue/devtools-api/6.1.4:
+    resolution: {integrity: sha512-IiA0SvDrJEgXvVxjNkHPFfDx6SXw0b/TUkqMcDZWNg9fnCAHbTpoo59YfJ9QLFkwa3raau5vSlRVzMSLDnfdtQ==}
+    dev: false
 
   /@vue/reactivity-transform/3.2.34:
     resolution: {integrity: sha512-OtsrL4/i6Md279pMhZ8wRijeDhPSdnXrH9wmqAcKDhVcp1L2kSWlgVVLa1jGIyyFYE806YiJNJiGBvXPGXMzxw==}
@@ -945,6 +951,15 @@ packages:
       '@vue/composition-api':
         optional: true
     dependencies:
+      vue: 3.2.34
+    dev: false
+
+  /vue-router/4.0.15_vue@3.2.34:
+    resolution: {integrity: sha512-xa+pIN9ZqORdIW1MkN2+d9Ui2pCM1b/UMgwYUCZOiFYHAvz/slKKBDha8DLrh5aCG/RibtrpyhKjKOZ85tYyWg==}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      '@vue/devtools-api': 6.1.4
       vue: 3.2.34
     dev: false
 

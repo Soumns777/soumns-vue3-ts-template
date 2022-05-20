@@ -3,7 +3,7 @@ import { reactive, ref } from 'vue';
 </script>
 
 <template>
-  <router-view></router-view>
+  <div>Home</div>
 </template>
 
 <style scoped lang="scss"></style>
