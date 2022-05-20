@@ -1,6 +1,10 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 
+import AutoImport from 'unplugin-auto-import/vite';
+import Components from 'unplugin-vue-components/vite';
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
+
 import path from 'path';
 const pathSrc = path.resolve(__dirname, 'src');
 
@@ -9,6 +13,12 @@ export default defineConfig({
   plugins: [
     vue({
       reactivityTransform: true, // 可以支持 $ref 语法糖
+    }),
+    AutoImport({
+      resolvers: [ElementPlusResolver()],
+    }),
+    Components({
+      resolvers: [ElementPlusResolver()],
     }),
   ],
   resolve: {
