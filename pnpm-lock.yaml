@@ -5,6 +5,8 @@ specifiers:
   '@types/node': ^17.0.35
   '@vitejs/plugin-vue': ^2.3.3
   element-plus: ^2.2.0
+  pinia: ^2.0.14
+  pinia-persistedstate-plugin: ^0.1.0
   typescript: ^4.5.4
   unplugin-auto-import: ^0.7.2
   unplugin-vue-components: ^0.19.5
@@ -15,6 +17,8 @@ specifiers:
 
 dependencies:
   element-plus: 2.2.0_vue@3.2.34
+  pinia: 2.0.14_3qif72e3bpvbqxqkytcvw4yi4u
+  pinia-persistedstate-plugin: 0.1.0_3qif72e3bpvbqxqkytcvw4yi4u
   vue: 3.2.34
   vue-router: 4.0.15_vue@3.2.34
 
@@ -105,6 +109,10 @@ packages:
 
   /@sxzz/popperjs-es/2.11.7:
     resolution: {integrity: sha512-Ccy0NlLkzr0Ex2FKvh2X+OyERHXJ88XJ1MXtsI9y9fGexlaXaVTPzBCRBwIxFkORuOb+uBqeu+RqnpgYTEZRUQ==}
+    dev: false
+
+  /@types/js-cookie/3.0.2:
+    resolution: {integrity: sha512-6+0ekgfusHftJNYpihfkMu8BWdeHs9EOJuGcSofErjstGPfPGEu9yTu4t460lTzzAMl2cM5zngQJqPMHbbnvYA==}
     dev: false
 
   /@types/lodash-es/4.17.6:
@@ -757,6 +765,35 @@ packages:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
     dev: true
+
+  /pinia-persistedstate-plugin/0.1.0_3qif72e3bpvbqxqkytcvw4yi4u:
+    resolution: {integrity: sha512-ToKR/EJzhhXElQ5YL8PVVY4CqLJjywxszAJjOCgprjmIVkTrPBsEOY4b/ATOzHQc1TtuaJs/3MJuoCpA3pv8Ew==}
+    dependencies:
+      '@types/js-cookie': 3.0.2
+      pinia: 2.0.14_3qif72e3bpvbqxqkytcvw4yi4u
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - typescript
+      - vue
+    dev: false
+
+  /pinia/2.0.14_3qif72e3bpvbqxqkytcvw4yi4u:
+    resolution: {integrity: sha512-0nPuZR4TetT/WcLN+feMSjWJku3SQU7dBbXC6uw+R6FLQJCsg+/0pzXyD82T1FmAYe0lsx+jnEDQ1BLgkRKlxA==}
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: ^2.6.14 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/devtools-api': 6.1.4
+      typescript: 4.6.4
+      vue: 3.2.34
+      vue-demi: 0.12.5_vue@3.2.34
+    dev: false
 
   /postcss/8.4.14:
     resolution: {integrity: sha512-E398TUmfAYFPBSdzgeieK2Y1+1cpdxJx8yXbK/m57nRhKSmk1GB2tO4lbLBtlkfPQTDKfe4Xqv1ASWPpayPEig==}

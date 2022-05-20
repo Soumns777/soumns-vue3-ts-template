@@ -1,4 +1,6 @@
 import { createApp } from 'vue';
+import { createPinia } from 'pinia';
+import { createPersistedState } from 'pinia-persistedstate-plugin';
 import App from './App.vue';
 
 import * as ElementPlusIconsVue from '@element-plus/icons-vue';
@@ -10,4 +12,7 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 
 import router from '@/router/index';
 
-createApp(App).use(router).mount('#app');
+const store = createPinia();
+store.use(createPersistedState());
+
+createApp(App).use(router).use(store).mount('#app');
