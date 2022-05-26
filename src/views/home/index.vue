@@ -16,6 +16,11 @@ store.changeName({
 
 const { user, firstName, nextName } = storeToRefs(store);
 console.log(user, '💙💛 get-pinia');
+
+// fetch
+fetch('http://127.0.0.1:3001/test')
+  .then((res) => res.json())
+  .then((res) => console.log(res, ' fetch data💙💛'));
 </script>
 
 <template>
