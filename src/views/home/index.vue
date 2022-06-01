@@ -4,6 +4,9 @@ import { reactive, ref } from 'vue';
 import useStore from '@/store/index';
 import { storeToRefs } from 'pinia';
 import { useEverything } from '@/store/index';
+
+import { login } from '@/services/request';
+
 console.log(useEverything().User, 'useEverything 💙💛');
 
 const store = useStore().User;
@@ -17,10 +20,11 @@ store.changeName({
 const { user, firstName, nextName } = storeToRefs(store);
 console.log(user, '💙💛 get-pinia');
 
-// fetch
-fetch('http://127.0.0.1:3001/test')
-  .then((res) => res.json())
-  .then((res) => console.log(res, ' fetch data💙💛'));
+// 调用接口
+login({
+  name: 'iu',
+  age: 19,
+}).then((res) => console.log(res, '💙💛 res data '));
 </script>
 
 <template>
