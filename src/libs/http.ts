@@ -6,7 +6,7 @@ import axios, {
 } from 'axios';
 // import { showFullScreenLoading, tryHideFullScreenLoading } from "@/config/serviceLoading";
 import { AxiosCanceler } from './helper/axiosCancel';
-import { ResultData } from './types';
+import { LoginRes, ResultData } from './types';
 import { ResultEnum } from '@/enums/httpEnum';
 import { checkStatus } from './helper/checkStatus';
 import { ElMessage } from 'element-plus';
@@ -22,7 +22,7 @@ const config = {
   baseURL: 'http://localhost:3001',
   // 设置超时时间（10s）
   timeout: ResultEnum.TIMEOUT as number,
-  // 跨域时候允许携带凭证
+  // 跨域时候允许携带凭证(需要后台配置)
   withCredentials: true,
 };
 

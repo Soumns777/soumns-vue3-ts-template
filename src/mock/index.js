@@ -6,7 +6,14 @@ const app = express();
 
 // 允许跨域资源共享
 const cors = require('cors');
-app.use(cors());
+// app.use(cors());
+
+app.use(
+  cors({
+    credentials: true,
+    origin: 'http://localhost:3000', // web前端服务器地址
+  })
+);
 
 //配置解析 application/json 格式数据的内置中间件
 app.use(express.json());
@@ -33,6 +40,6 @@ app.post('/postMock', (req, res) => {
 });
 
 // 启动服务器
-app.listen(3000, () => {
-  console.log('💙💛 服务在3000端口启动');
+app.listen(3001, () => {
+  console.log('💙💛 服务在3001端口启动');
 });
