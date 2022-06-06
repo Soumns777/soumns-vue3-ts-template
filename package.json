@@ -10,6 +10,7 @@
   "dependencies": {
     "@types/axios": "^0.14.0",
     "@types/qs": "^6.9.7",
+    "@vueuse/core": "^8.6.0",
     "axios": "^0.27.2",
     "cors": "^2.8.5",
     "element-plus": "^2.2.0",

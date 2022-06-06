@@ -4,6 +4,7 @@ import { reactive, ref } from 'vue';
 import useStore from '@/store/index';
 import { storeToRefs } from 'pinia';
 import { useEverything } from '@/store/index';
+import { useDark, useToggle } from '@vueuse/core';
 
 import { login } from '@/services/request';
 
@@ -25,10 +26,18 @@ login({
   name: 'iu',
   age: 19,
 }).then((res) => console.log(res, '💙💛 res data '));
+
+// 暗黑模式
+const isDark = useDark();
+const toggleDark = useToggle(isDark);
 </script>
 
 <template>
-  <div>Home</div>
+  <div>
+    Home
+
+    <button @click="toggleDark()">change</button>
+  </div>
 </template>
 
 <style scoped lang="scss"></style>
