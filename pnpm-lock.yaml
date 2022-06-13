@@ -4,6 +4,7 @@ specifiers:
   '@element-plus/icons-vue': ^1.1.4
   '@types/axios': ^0.14.0
   '@types/node': ^17.0.35
+  '@types/nprogress': ^0.2.0
   '@types/qs': ^6.9.7
   '@vitejs/plugin-vue': ^2.3.3
   '@vueuse/core': ^8.6.0
@@ -11,6 +12,7 @@ specifiers:
   cors: ^2.8.5
   element-plus: ^2.2.0
   express: ^4.18.1
+  nprogress: ^0.2.0
   pinia: ^2.0.14
   pinia-persistedstate-plugin: ^0.1.0
   qs: ^6.10.3
@@ -24,12 +26,14 @@ specifiers:
 
 dependencies:
   '@types/axios': 0.14.0
+  '@types/nprogress': 0.2.0
   '@types/qs': 6.9.7
   '@vueuse/core': 8.6.0_vue@3.2.34
   axios: 0.27.2
   cors: 2.8.5
   element-plus: 2.2.0_vue@3.2.34
   express: 4.18.1
+  nprogress: 0.2.0
   pinia: 2.0.14_3qif72e3bpvbqxqkytcvw4yi4u
   pinia-persistedstate-plugin: 0.1.0_3qif72e3bpvbqxqkytcvw4yi4u
   qs: 6.10.3
@@ -151,6 +155,10 @@ packages:
   /@types/node/17.0.35:
     resolution: {integrity: sha512-vu1SrqBjbbZ3J6vwY17jBs8Sr/BKA+/a/WtjRG+whKg1iuLFOosq872EXS0eXWILdO36DHQQeku/ZcL6hz2fpg==}
     dev: true
+
+  /@types/nprogress/0.2.0:
+    resolution: {integrity: sha512-1cYJrqq9GezNFPsWTZpFut/d4CjpZqA0vhqDUPFWYKF1oIyBz5qnoYMzR+0C/T96t3ebLAC1SSnwrVOm5/j74A==}
+    dev: false
 
   /@types/qs/6.9.7:
     resolution: {integrity: sha512-FGa1F62FT09qcrueBA6qYTrJPVDzah9a+493+o2PCXsesWHIn27G98TsSMs3WPNbZIEj4+VJf6saSFpvD+3Zsw==}
@@ -1071,6 +1079,10 @@ packages:
 
   /normalize-wheel-es/1.1.2:
     resolution: {integrity: sha512-scX83plWJXYH1J4+BhAuIHadROzxX0UBF3+HuZNY2Ks8BciE7tSTQ+5JhTsvzjaO0/EJdm4JBGrfObKxFf3Png==}
+    dev: false
+
+  /nprogress/0.2.0:
+    resolution: {integrity: sha512-I19aIingLgR1fmhftnbWWO3dXc0hSxqHQHQb3H8m+K3TnEn/iSeTZZOyvKXWqQESMwuUVnatlCnZdLBZZt2VSA==}
     dev: false
 
   /object-assign/4.1.1:
