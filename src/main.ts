@@ -1,5 +1,3 @@
-import { createApp } from 'vue';
-import { createPinia } from 'pinia';
 import 'element-plus/theme-chalk/dark/css-vars.css';
 import { createPersistedState } from 'pinia-persistedstate-plugin';
 import App from './App.vue';

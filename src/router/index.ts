@@ -1,6 +1,5 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import type { RouteRecordRaw } from 'vue-router';
 import NProgress from '@/libs/nprogress';
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 
 // 创建路由表
 const routes: RouteRecordRaw[] = [

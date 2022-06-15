@@ -15,6 +15,8 @@ export default defineConfig({
       reactivityTransform: true, // 可以支持 $ref 语法糖
     }),
     AutoImport({
+      imports: ['vue', 'vue-router', 'vue/macros', '@vueuse/core', 'pinia'],
+      dts: 'src/auto-imports.d.ts',
       resolvers: [ElementPlusResolver()],
     }),
     Components({

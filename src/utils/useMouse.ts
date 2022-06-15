@@ -1,6 +1,3 @@
-import { ref, onMounted, onUnmounted } from 'vue';
-import { $ref, $, $$ } from 'vue/macros';
-
 function useMouse() {
   //   let x = $ref(0);
   //   let y = $ref(0);
