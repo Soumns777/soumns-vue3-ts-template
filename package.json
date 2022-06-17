@@ -3,9 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "dev": "vite --mode development",
+    "dev:test": "vite --mode test",
+    "dev:prod": "vite --mode production",
+    "build": "vue-tsc --noEmit --skipLibCheck && vite build",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
     "@types/axios": "^0.14.0",
