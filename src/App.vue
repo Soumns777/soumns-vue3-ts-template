@@ -4,4 +4,9 @@
   <router-view></router-view>
 </template>
 
-<style scoped lang="scss"></style>
+<style lang="scss">
+* {
+  margin: 0;
+  padding: 0;
+}
+</style>
