@@ -28,9 +28,7 @@ export default defineConfig({
       dts: 'src/components.d.ts',
       resolvers: [ElementPlusResolver()],
     }),
-    Unocss({
-      presets: [presetUno(), presetAttributify(), presetIcons()],
-    }),
+    Unocss(),
   ],
   resolve: {
     alias: {

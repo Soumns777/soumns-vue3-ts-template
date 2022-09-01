@@ -31,7 +31,7 @@ const toggleDark = useToggle(isDark);
   <div>
     Home
 
-    <button @click="toggleDark()">change</button>
+    <button soumns-btn-dfl color="#fff" @click="toggleDark()">Change</button>
   </div>
 </template>
 

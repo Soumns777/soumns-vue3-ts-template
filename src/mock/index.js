@@ -11,7 +11,11 @@ const cors = require('cors');
 app.use(
   cors({
     credentials: true,
-    origin: 'http://localhost:3000', // web前端服务器地址
+    origin: [
+      'http://localhost:3000',
+      'http://localhost:3001',
+      'http://localhost:3002',
+    ], // web前端服务器地址
   })
 );
 
